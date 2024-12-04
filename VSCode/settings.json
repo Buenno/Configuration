@@ -1,0 +1,89 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Ayu Dark Meta",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 12,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "proportional",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.tabCloseButton": "off",
+  "breadcrumbs.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.padding.bottom": 14,
+  "editor.padding.top": 14,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.codeLens": false,
+  "editor.glyphMargin": false,
+  "editor.foldingHighlight": false,
+  "editor.renderLineHighlight": "none",
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.matchBrackets": "near",
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.parameterHints.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.smoothScrolling": true,
+  "editor.lineNumbers": "on",
+  "explorer.compactFolders": false,
+  "window.autoDetectHighContrast": false,
+  "zenMode.fullScreen": false,
+  "editor.lineHeight": 24,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hidden",
+    "trafficLightPosition": {
+      "x": 9,
+      "y": 9
+    }
+  },
+  "window.titleBarStyle": "native",
+  "apc.statusBar": {
+    "position": "editor-bottom"
+  },
+  "apc.activityBar": {
+    "position": "top",
+    "size": 36
+  },
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "update.mode": "manual",
+  "apc.header": {
+    "height": 36
+  },
+
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "powershell.promptToUpdatePowerShell": false,
+  "idf.gitPathWin": "C:\\Users\\bueno\\.espressif\\tools\\idf-git\\2.39.2\\cmd\\git.exe",
+  "idf.espIdfPathWin": "C:\\Users\\bueno\\esp\\esp-idf",
+  "idf.pythonBinPathWin": "C:\\Users\\bueno\\.espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
+  "idf.toolsPathWin": "C:\\Users\\bueno\\.espressif",
+  "idf.customExtraPaths": "C:\\Users\\bueno\\.espressif\\tools\\xtensa-esp-elf-gdb\\12.1_20221002\\xtensa-esp-elf-gdb\\bin;C:\\Users\\bueno\\.espressif\\tools\\riscv32-esp-elf-gdb\\12.1_20221002\\riscv32-esp-elf-gdb\\bin;C:\\Users\\bueno\\.espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\bin;C:\\Users\\bueno\\.espressif\\tools\\xtensa-esp32s2-elf\\esp-12.2.0_20230208\\xtensa-esp32s2-elf\\bin;C:\\Users\\bueno\\.espressif\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin;C:\\Users\\bueno\\.espressif\\tools\\riscv32-esp-elf\\esp-12.2.0_20230208\\riscv32-esp-elf\\bin;C:\\Users\\bueno\\.espressif\\tools\\esp32ulp-elf\\2.35_20220830\\esp32ulp-elf\\bin;C:\\Users\\bueno\\.espressif\\tools\\cmake\\3.24.0\\bin;C:\\Users\\bueno\\.espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20230921\\openocd-esp32\\bin;C:\\Users\\bueno\\.espressif\\tools\\ninja\\1.10.2;C:\\Users\\bueno\\.espressif\\tools\\idf-exe\\1.0.3;C:\\Users\\bueno\\.espressif\\tools\\ccache\\4.8\\ccache-4.8-windows-x86_64;C:\\Users\\bueno\\.espressif\\tools\\dfu-util\\0.11\\dfu-util-0.11-win64;C:\\Users\\bueno\\.espressif\\tools\\esp-rom-elfs\\20230320",
+  "idf.customExtraVars": {
+      "OPENOCD_SCRIPTS": "C:\\Users\\bueno\\.espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+      "IDF_CCACHE_ENABLE": "1",
+      "ESP_ROM_ELF_DIR": "C:\\Users\\bueno\\.espressif\\tools\\esp-rom-elfs\\20230320/"
+  },
+  "explorer.confirmDelete": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "never",
+  "workbench.colorCustomizations": {
+    "gitDecoration.ignoredResourceForeground": "#696969"
+  }
+}
