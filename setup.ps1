@@ -1,3 +1,4 @@
+#Requires -RunAsAdministrator
 
 $modules = @(
   "psgsuite",
@@ -8,17 +9,13 @@ $modules = @(
   "modulebuilder"
 )
 
-# Installing NuGet package provider...
-Write-Host "Installing NuGet"
-Install-PackageProvider -Name NuGet -Force | Out-Null
-
-# Install the CascadiaCode font pack for Oh My Posh
-Start-Sleep -Seconds 2
-& "$env:localappdata\Programs\oh-my-posh\bin\oh-my-posh.exe" font install CascadiaCode | Out-Null
-
 # Powershell profile parent folder. This works with files and symlinks.
 $profileDir = $PROFILE.CurrentUserCurrentHost | Split-Path
 $profileParentDir = $profileDir.Substring(0, $profileDir.LastIndexOf('\'))
+
+# Installing NuGet package provider...
+Write-Host "Installing NuGet"
+Install-PackageProvider -Name NuGet -Force | Out-Null
 
 # Install modules
 Write-Host "Installing modules"
@@ -44,7 +41,8 @@ $symlinks = @{
 
 # Install Oh My Posh
 Write-Host "Installing Oh My Posh"
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1')) | Out-Null
+Set-ExecutionPolicy Bypass -Scope Process -Force
+$null = Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1')) | Out-Null
 Start-Sleep -Seconds 5
 # Install the CascadiaCode front pack
 & "$env:localappdata\Programs\oh-my-posh\bin\oh-my-posh.exe" font install CascadiaCode | Out-Null
@@ -58,6 +56,3 @@ foreach ($symlink in $symlinks.GetEnumerator()) {
 
 Write-Host -ForegroundColor Yellow "You may need to install Powershell 7 manually - https://learn.microsoft.com/en-gb/powershell/scripting/install/installing-powershell-on-windows?#msi"
 Write-Host -ForegroundColor Green "Setup complete"
-
-Write-Host "Press any key to continue"
-$void = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
