@@ -42,7 +42,7 @@ Function Invoke-EntraSync {
     .NOTES
         Name: Invoke-EntraSync
         Author: Toby Williams
-        Version: 1.0
+        Version: 1.2
         DateCreated: 01/10/2024
      
     .EXAMPLE
@@ -69,13 +69,13 @@ Function Invoke-EntraSync {
     
     PROCESS {
         try {
-            Write-Host "Starting Entra AD sync..."
+            Write-Verbose "Starting Entra AD sync..."
             $command = Invoke-Command -ComputerName $server -ScriptBlock {Start-ADSyncSyncCycle -PolicyType delta} -Credential $Credential
             if ($command.Result -eq "Success") {
-                Write-Host "Sync completed successfully" -ForegroundColor Green
+                Write-Verbose "Sync completed successfully"
             }
             else {
-                Write-Error "There was an issue executing the sync command. Check remote logs for more details." -ForegroundColor yellow
+                Write-Error "There was an issue executing the sync command. Check remote logs for more details."
             }
         }
         catch {
